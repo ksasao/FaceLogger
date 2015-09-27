@@ -50,7 +50,7 @@ namespace FaceLogger
 
             // 書き込み内容
             string timestamp = now.ToString("yyyy/MM/dd HH:mm:ss");
-            string data = string.Format("'{0}',{1}", timestamp, message);
+            string data = string.Format("{0},{1}", timestamp, message);
 
             writer.WriteLine(data);
             writer.Flush();
