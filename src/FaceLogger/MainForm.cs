@@ -15,7 +15,7 @@ namespace FaceLogger
     public partial class MainForm : Form
     {
         CaptureDevice camera;
-        Bitmap bmp = new Bitmap(320,240);
+        Bitmap bmp = new Bitmap(640,480);
         const string classifier = @"haarcascade_frontalface_default.xml";
         CascadeClassifier detector = new CascadeClassifier(classifier);
         Logger log = new Logger(@".\Logs");

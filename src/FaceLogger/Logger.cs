@@ -42,6 +42,7 @@ namespace FaceLogger
             if (oldPath != name || writer == null)
             {
                 if(writer != null){
+                    writer.Close();
                     writer.Dispose();
                 }
                 oldPath = name;
@@ -60,7 +61,7 @@ namespace FaceLogger
         {
             if (writer != null)
             {
-                writer.Flush();
+                writer.Close();
                 writer.Dispose();
             }
         }
