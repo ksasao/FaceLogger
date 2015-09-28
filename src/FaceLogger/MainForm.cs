@@ -47,6 +47,7 @@ namespace FaceLogger
                 }
                 camera = devices[selected];
                 camera.Activate();
+                bmp = new Bitmap(camera.DeviceWidth, camera.DeviceHeight);
                 this.Text = camera.Name;
             }
             else
