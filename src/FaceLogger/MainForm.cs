@@ -16,7 +16,7 @@ namespace FaceLogger
     {
         CaptureDevice camera;
         Bitmap bmp = new Bitmap(640,480);
-        const string classifier = @"haarcascade_frontalface_default.xml";
+        const string classifier = @"daily_life_face.xml";
         CascadeClassifier detector = new CascadeClassifier(classifier);
         Logger log = new Logger(@".\Logs");
 
