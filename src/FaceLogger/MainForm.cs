@@ -62,7 +62,7 @@ namespace FaceLogger
             int count = 0;
             if (detector.Loaded)
             {
-                List<Rectangle> rects = detector.DetectMultiScale(bmp, 1.1, 3, new Size(100, 100), new Size(300, 300));
+                List<Rectangle> rects = detector.DetectMultiScale(bmp, 1.05, 3, new Size(100, 100), new Size(300, 300));
                 count = rects.Count;
                 using (Graphics g = Graphics.FromImage(bmp))
                 {
