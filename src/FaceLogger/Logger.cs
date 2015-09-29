@@ -54,13 +54,14 @@ namespace FaceLogger
             string data = string.Format("{0},{1}", timestamp, message);
 
             writer.WriteLine(data);
-           // writer.Flush();
+            writer.Flush();
         }
 
         public void Dispose()
         {
             if (writer != null)
             {
+                writer.Flush();
                 writer.Close();
                 writer.Dispose();
             }
